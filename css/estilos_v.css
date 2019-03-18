@@ -1,0 +1,272 @@
+*{
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box;
+	font-family: Bradley Hand ITC; 
+
+}
+
+
+header {
+	height: 50px; 
+	background: #5f5f63; 
+	color: #020101; 
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+#btn-menu{
+	display: none;
+}
+
+header label {
+	font-size: 30px; 
+	cursor: pointer;
+	display: none;
+}
+.menu ul
+{
+	background: #5f5f63; 
+	display: flex;
+	list-style: none;
+}
+
+.menu ul ul {
+	display: none; 
+}
+
+.menu a {
+	display: block;
+	padding: 15px 20px; 
+	color: #0202f9; 
+	text-decoration: none;
+}
+.menu a: hover
+{
+	background: rgba(0,0,0,0.3);
+}
+.menu a span {
+	margin-left: 10px; 
+}
+.menu ul li:hover ul {
+	display: block;
+	position: absolute;
+	background: #5f5f63;
+}
+
+
+/*
+.menu ul li ul li ul li  {
+	display: block !important;
+	position: absolute !important;
+	min-width: 140px !important;
+}
+*/
+.nombre{ 
+  color: #0202f9;
+  font-weight: normal;
+  font-size: 35px;
+  text-transform: uppercase;
+  position: relative;
+  text-align: right; 
+  
+}
+footer .contedor {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 45px;
+	color: #0202f9;
+}
+
+
+
+.copy
+{
+	font-size: 20px; 
+
+}
+
+
+/*
+.menu ul li:hover ul li ul li{
+	display: block;
+	position: absolute;
+	background: #00FFFF; 
+	left: 100px;
+
+}*/
+
+
+/*******************Registro clientes *******************************************/
+
+.Registro_clientes{
+	width: 450px;
+	margin: auto;
+}
+
+.Registro_clientes h1 {
+	color: #0202f9; 
+
+}
+.Registro_clientes hr
+{
+	border: 0; 
+	background: #ccc; 
+	height: 1px; 
+	margin: 10px 0; 
+	display: block;
+}
+
+.Registro_clientes form{
+	background: #fff; 
+	margin: auto; 
+	padding: 20px 50px ; 
+	border: 1px solid #0202f9; 
+
+}
+.Registro_clientes label {
+	display: block;
+	font-size: 12pt; 
+	margin: 15px auto 5px auto; 
+
+}
+
+.Registro_clientes input,select {
+	display: block;
+	width: 100%; 
+	font-size: 11pt; 
+	padding: 5px; 
+	border: 1px solid #0202f9; 
+	border-radius: 5px; 
+
+}
+
+.btn_save
+{
+	font-size: 12pt; 
+	background: #0202f9; 
+	padding: 10px; 
+	color: #fff; 
+	letter-spacing: 1px; 
+	cursor: pointer;
+	margin: 15px auto; 
+}
+/**********************************Registro  usuario **********/
+
+.Registro_usuario{
+	width:  450px; 
+	margin: auto;
+}
+.Registro_usuario h1 {
+	color: #0202f9; 	
+}
+.Registro_usuario hr{
+
+	border: 0; 
+	background: #ccc; 
+	height: 1px; 
+	margin: 10px 0; 
+	display: block;
+}
+.Registro_usuario form{
+	background: #fff; 
+	margin: auto;
+	padding: 20px 50px; 
+	border: 1px solid #0202f9; 
+
+}
+.Registro_usuario label {
+	display: block;
+	font-size: 12pt; 
+	margin: 15px auto 5px auto; 
+
+}
+.Registro_usuario input,select {
+	display: block;
+	width: 100%; 
+	font-size: 11pt; 
+	padding: 5px;
+	border: 1px solid #0202f9; 
+	border-radius: 5px; 
+}
+
+.btn_sav
+{
+	font-size: 12pt; 
+	background: #0202f9; 
+	padding: 10px; 
+	color: #fff; 
+	letter-spacing: 1px; 
+	cursor: pointer;
+	margin: 15px auto; 
+}
+
+.alert
+ {
+ 	width: 100%; 
+ 	background: #0202f9;
+ 	border-radius: 6px; 
+ 	margin: 20px auto; 
+ }
+ .msg_error{
+ 	color: #e65656; 
+ }
+.msg_save{
+	color: #126e00; 
+
+}
+.alert p
+{
+	padding: 10px; 
+}
+
+
+/**************************Registro de articulos *******************************/
+
+
+@media (max-width: 768px)
+{
+	header label
+	 {
+		display: block;
+	}
+
+	.menu
+	{
+	position: absolute;
+	top: 50px; 
+	left: 0; 
+	width: 100%;
+	transform: translateX(-100%);
+	transition: all 0.3s; 
+
+
+	}
+
+	.menu ul 
+	{
+	display: block;
+	background: #555; 
+	}
+
+	.menu ul li:hover ul
+	 {
+	display: none;
+	position: static;
+
+	}
+	.menu a span 
+	{
+	position: absolute;
+	right: 5px; 
+	}
+	#btn-menu:checked ~ .menu
+	{
+	transform: translateX(0%);
+	}
+
+
+
+
+}
