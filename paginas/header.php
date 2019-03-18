@@ -14,6 +14,7 @@
 					<li> <a href=""> Registro Seguros</a></li>	
 					<li> <a href="Usuario.php">  Registro Usuarios </a></li>
 					<li>  <a href="articulos.php"> Registro de Articulos</a> </li>
+					<li>  <a href="actualizar_datos.php"> Actualizar datos</a> </li>
 
 				</ul>
 			</li>
