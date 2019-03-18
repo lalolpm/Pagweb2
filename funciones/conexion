@@ -1,8 +1,0 @@
-<?php 
-include 'conexion_sql_server.php';
-
-$numero = db_conectar();
-
-echo 'numero = ' . $numero;
-
-?>

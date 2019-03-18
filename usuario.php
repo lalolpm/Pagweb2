@@ -25,7 +25,19 @@ if (!empty($_POST))
 
 
 					$conexion = db_conectar();
-					$sql = "exec spUsuario ".$Usuario;			
+					$sql = "exec spdatos '','1','$nombre','$cedula'		,'','','','1'
+
+							declare @codigo_datos int 
+							set @codigo_datos= (select max(codigo_datos) from datos)
+
+							exec spUsuario '',
+							@codigo_datos,
+							$rol,
+							'$Usuario',
+							'$clave',
+							'',
+							'',
+							'1'";			
 		            $resultado = ejecutar_query($sql, $conexion);
 
 			}
