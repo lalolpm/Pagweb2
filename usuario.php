@@ -25,7 +25,7 @@ if (!empty($_POST))
 
 
 					$conexion = db_conectar();
-					$sql = "exec spUsuario ".$Usuario.",".$clave;			
+					$sql = "exec spUsuario ".$Usuario;			
 		            $resultado = ejecutar_query($sql, $conexion);
 
 			}
