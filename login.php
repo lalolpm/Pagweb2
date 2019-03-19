@@ -1,7 +1,7 @@
 <?php
 
 
-  $alert = '';
+  //$alert = '';
 
 if(!empty($_POST))
 {
@@ -16,6 +16,7 @@ if(empty($_POST['usuario']) || empty($_POST['clave']))
   {
     include "funciones/conexion_sql_server.php";
     $conexion = db_conectar();
+    session_start();
 
     $user = $_POST['usuario'];
     $pass = $_POST['clave'];
@@ -24,6 +25,7 @@ if(empty($_POST['usuario']) || empty($_POST['clave']))
     $sql = "select * from usuario where usuario = '$user' and clave = '$pass' ";
 
     $sql = ejecutar_query($sql,$conexion);
+    $sql = traer_fila($sql);
     
 
     if($sql > 0)
@@ -32,10 +34,20 @@ if(empty($_POST['usuario']) || empty($_POST['clave']))
       //echo $row['codigo_datos'];
 
       $row = mssql_fetch_array($sql);
-      session_start();
+      
+      $_SESSION['active'] = true;
+      $_SESSION['idusuario'] = $row['codigo_usuario'];
+      $_SESSION['iddatos'] = $row['codigo_datos'];
+      $_SESSION['rol'] = $row['codigo_tipo_usuario'];
+      $_SESSION['usuario'] = $row['usuario'];
 
+      header("location: /Pagweb2/Pagweb2");
+    }
 
-
+    else
+    {
+      $alert = "Usuario o clave incorrectos";
+      session_destroy();
 
     }
 
