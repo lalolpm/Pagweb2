@@ -11,12 +11,23 @@
 
 </head>
 <body>
-<?php include "paginas/header.php";  ?>
-<?php include "paginas/footer.php"; ?>
+<?php 
+	
+	session_start();
+	if(empty($_SESSION['active']))
+	{
+		header("location: login.php");
+	}
+
+	else{
+
+		include "paginas/header.php";  
+		include "paginas/footer.php"; 
+
+	}
+?> 
 
 	<script src ="js/menu.js"></script>
-	
-	
 
 </body>
 </html>

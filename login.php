@@ -2,7 +2,12 @@
 
 
   $alert = '';
-
+session_start();
+if(!empty($_SESSION['active']))
+  {
+    header("location: /Pagweb2/Pagweb2");
+  }
+  else{
 if(!empty($_POST))
 {
 
@@ -16,7 +21,7 @@ if(empty($_POST['usuario']) || empty($_POST['clave']))
   {
     include "funciones/conexion_sql_server.php";
     $conexion = db_conectar();
-    session_start();
+    
 
     $user = $_POST['usuario'];
     $pass = $_POST['clave'];
@@ -53,6 +58,7 @@ if(empty($_POST['usuario']) || empty($_POST['clave']))
 
   }
 
+}
 }
 
 ?>
