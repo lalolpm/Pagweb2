@@ -1,7 +1,7 @@
 <?php
 
 
-  //$alert = '';
+  $alert = '';
 
 if(!empty($_POST))
 {
