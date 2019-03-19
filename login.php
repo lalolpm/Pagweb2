@@ -1,3 +1,50 @@
+<?php
+
+
+  $alert = '';
+
+if(!empty($_POST))
+{
+
+if(empty($_POST['usuario']) || empty($_POST['clave']))
+{
+  $alert = "Ingresar usuario y clave";
+
+}
+
+  else
+  {
+    include "funciones/conexion_sql_server.php";
+    $conexion = db_conectar();
+
+    $user = $_POST['usuario'];
+    $pass = $_POST['clave'];
+
+
+    $sql = "select * from usuario where usuario = '$user' and clave = '$pass' ";
+
+    $sql = ejecutar_query($sql,$conexion);
+    
+
+    if($sql > 0)
+    {
+      //$resultado = traer_fila($sql);
+      //echo $row['codigo_datos'];
+
+      $row = mssql_fetch_array($sql);
+      session_start();
+
+
+
+
+    }
+
+  }
+
+}
+
+?>
+
 <!DOCTYPE html>
 <html >
 <head>
@@ -16,14 +63,17 @@
   <img src=" " width="362" height="107">
   <div class="form">
     <form method="post" action="" enctype="application/x-www-form-urlencoded" class="login-form">
-      <input type="text" name="usuario_txt" id="usuario_txt" placeholder="Usuario"/>
-      <input type="password" name="clave_txt" id="clave_txt" placeholder="Password"/>
-      <button>login</button>
+      <input type="text" name="usuario" id="usuario" placeholder="Usuario"/>
+      <input type="password" name="clave" id="clave" placeholder="Password"/>
+      <button>iniciar</button>
+      
+    <p><font color="#FF0000" size="3" face="Arial, Helvetica, sans-serif">
+        
+      <div class = "alert"> <?php echo isset($alert) ? $alert : '';?> </div></font> </p>
+
      <!-- <p class="message">¿Aun no eres usuario? <a href="registrarme.php"><strong>Registrarme</strong>&nbsp;</a></p> -->
     </form>
-  </div> <p><font color="#FF0000" size="2" face="Arial, Helvetica, sans-serif">
-
-        </font> </p>
+  </div> 
 </div>
 
 
