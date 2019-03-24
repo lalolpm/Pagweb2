@@ -17,8 +17,10 @@
 			<h1> Actualizar Datos </h1>
 			<hr>
 			<div class="alert"></div>
-			
+
 				<form action="" method="post">
+					<label for="cedula"> Cedula </label>
+					<input type="text" name="cedula" id="cedula" placeholder="Cedula">
 					<label for="fecnacimiento"> Fecha de Nacimiento </label>
 					<input type="date" name="fecnacimiento" id="fecnacimiento" placeholder="feccha nacimiento">
 					<label for="pais"> Pais </label>
@@ -30,6 +32,8 @@
 			    	<option value="3"> Otros </option>
 
 			    </select>
+
+			    <label for="estcivil" > Estado Civil </label>
 			    <select name="estcivil" id="estcivil">
 			    	<option value="1"> Soltero </option>
 			    	<option value="2"> Casado</option>
@@ -38,7 +42,9 @@
 			    </select>
 
 			    <label for="lugnacimiento"> Lugar Naciemiento </label>
-			    <input type="text" name="lugnacimiento" id="lugnacimiento" placeholder="lugnacimiento">
+			    <input type="text" name="lugnacimiento" id="lugnacimiento" placeholder="Lugar de Naciemiento">
+			    <label for="estado"> Estado </label>
+			    <input type="checkbox" name="estado" id="estado">
 
 
 
