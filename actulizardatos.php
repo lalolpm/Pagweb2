@@ -23,6 +23,22 @@
 					<input type="text" name="cedula" id="cedula" placeholder="Cedula">
 					<label for="fecnacimiento"> Fecha de Nacimiento </label>
 					<input type="date" name="fecnacimiento" id="fecnacimiento" placeholder="feccha nacimiento">
+					<label for="tipsangre"> Tipo de Sangre </label>
+					<select name="tipsangre" id="tipsangre">
+			    	<option value="1"> A+ </option>
+			    	<option value="2"> B+</option>
+			    	<option value="3"> O+ </option>
+			    	<option value="4"> AB+ </option>
+			    	<option value="5"> A- </option>
+			    	<option value="6"> B- </option>
+			    	<option value="7"> O- </option>
+			    	<option value="8"> AB- </option>
+
+
+			    </select>
+
+
+
 					<label for="pais"> Pais </label>
 					<input type="text" name="pais" id="pais" placeholder="Pais">
 					<label for="sexo"> Sexo </label>
