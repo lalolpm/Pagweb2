@@ -42,7 +42,7 @@ if (!empty($_POST))
 
 			}
 
-		
+		$alert= '<p class="msg_save"> Datos salvados correctamente </p>';
 
 
 
