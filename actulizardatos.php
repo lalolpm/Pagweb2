@@ -33,8 +33,6 @@
 			    	<option value="6"> B- </option>
 			    	<option value="7"> O- </option>
 			    	<option value="8"> AB- </option>
-
-
 			    </select>
 
 
@@ -62,7 +60,7 @@
 			    <label for="estado"> Estado </label>
 			    <input type="checkbox" name="estado" id="estado">
 
-
+                <input type="submit" value="Actualizar Datos" class="btn_sav">
 
 				</form>
 			
