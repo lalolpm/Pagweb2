@@ -20,7 +20,7 @@
 			</li>
 			<li class="submenu" ><a href="#">  Procesos <span class="icon-down-open"></span></a>
 				<ul>
-					<li> <a href=""> Historial  Clinico </a></li>
+					<li> <a href="historialclinico.php"> Historial  Clinico </a></li>
 					<li> <a href=""> sub item 3  </a></li>
 					<li> <a href=""> sub item 3 </a></li>
 					<li> <a href=""> sub item 3  </a></li>
