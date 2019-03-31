@@ -1,11 +1,16 @@
 <header>
+
+	
 	<h1 class="nombre"> Buho Consulting </h1>
+
+
 
 	<input type="checkbox" id="btn-menu">
 	<label for="btn-menu" class="icon-menu"> </label>
 
 	<nav class="menu">
 
+		
 		<ul>
 			<li><a href="#"> Inicio </a></li>
 			<li class="submenu"><a href="#"> Mantenimientos <span class="icon-down-open"></span></a>
@@ -14,7 +19,7 @@
 					<li> <a href=""> Registro Seguros</a></li>	
 					<li> <a href="Usuario.php">  Registro Usuarios </a></li>
 					<li>  <a href="articulos.php"> Registro de Articulos</a> </li>
-					<li>  <a href="actulizardatos.php"> Actualizar datos</a> </li>
+					<li>  <a href="actulizar_datos.php"> Actualizar datos</a> </li>
 
 				</ul>
 			</li>
@@ -36,4 +41,8 @@
 			</li>
 		</ul>
 	</nav>
+
+	<div>
+	<a href="salir.php"><img src="img/cerrar3.png" width="30" height="30" align="left"></a>
+		</div>
 </header>	
