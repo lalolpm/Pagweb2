@@ -31,6 +31,7 @@ if (!empty($_POST))
 		$estado_civil = $_POST['estado_civil'];
 		$lugar_nacimiento = $_POST['lugar_nacimiento'];
 		$estado = $_POST['estado'];
+		$codigo_pss = $_POST['codigo_pss'];
 
 
 
@@ -42,7 +43,9 @@ if (!empty($_POST))
 
 		exec spcorreo '$codigo_correo','$codigo_datos','','$correo','','1'
 
-		exec sptelefono '$codigo_telefono','$codigo_datos','','$telefono','','1'";
+		exec sptelefono '$codigo_telefono','$codigo_datos','','$telefono','','1'
+
+		update usuario set codigo_pss=$codigo_pss where codigo_datos=$codigo_datos ";
 
 		ejecutar_query($sql,$conexion);
 
@@ -80,6 +83,10 @@ if (!empty($_POST))
 
 					<label for="cedula"> Cedula </label>
 					<input type="text" name="cedula" id="cedula" placeholder="Cedula" value="<?php echo $row['DNI']?>">
+
+					<label for="codigo_pss"> Codigo PSS</label>
+				<input type="text" name="codigo_pss" id="codigo_pss" placeholder="Codigo PSS" value="<?php echo $row['codigo_pss']?>">
+
 					<label for="telefono"> Telefono </label>
 			    	<input type="text" name="telefono" id="telefono" placeholder="Telefono" value="<?php echo $row['telefono']?>">
 

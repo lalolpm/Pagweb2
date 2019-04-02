@@ -21,12 +21,18 @@
 			<form>
 				<label for="nombre"> Nombre</label>
 				<input type="text" name="nombre" id="nombre" placeholder="Nombre Completo">
+
 				<label for="cedula"> Cedula o RNC  </label>
-				<input type="text" name="cedula" id="nombre" placeholder="cedula o RNC">
+				<input type="text" name="cedula" id="nombre" placeholder="Cedula o RNC">
+
+				<label for="numero_afiliado"> Numero Afiliado</label>
+				<input type="text" name="numero_afiliado" id="numero_afiliado" placeholder="Numero Afiliado">
+
 				<label for="correo"> Correo Electronico </label>
 				<input type="email" name="correo" id="correo" placeholder="Correo Electronico">
+
 				<label for="direccion"> Direccion </label>
-				<input type="text" name="direccion" id="direccion" placeholder="direccion">
+				<input type="text" name="direccion" id="direccion" placeholder="Direccion">
 
 
 
@@ -47,6 +53,31 @@
 			    	<option value="3"> Otros </option>
 
 			    </select>
+
+			    <label for="tipo_sangre"> Tipo de Sangre </label>
+					<select name="tipo_sangre" id="tipo_sangre">
+						<option value=" <?php echo $row['tipo_sangre']; ?> "> <?php echo $row['tipo_sangre']; ?> </option>
+			    	<option value="A+"> A+ </option>
+			    	<option value="B+"> B+</option>
+			    	<option value="O+"> O+ </option>
+			    	<option value="AB+"> AB+ </option>
+			    	<option value="A"> A- </option>
+			    	<option value="B"> B- </option>
+			    	<option value="O-"> O- </option>
+			    	<option value="AB-"> AB- </option>
+			    </select>
+
+			    <label for="estado_civil" > Estado Civil </label>
+			    <select name="estado_civil" id="estado_civil">
+			    	<option value=" <?php echo $row['estado_civil']; ?> "> <?php echo $row['estado_civil']; ?> </option>
+			    	<option value="Soltero"> Soltero </option>
+			    	<option value="Casado"> Casado</option>
+			    	<option value="Otro"> Otro </option>
+
+			    </select>
+
+			    <label for="estado"> Estado </label>
+			    <input type="checkbox" name="estado" id="estado">
 
 				<input type="submit" value="Crear Cliente" class="btn_save">
 
