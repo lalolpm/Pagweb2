@@ -1,0 +1,59 @@
+.agrupa-campos-formulario{
+	/*
+	 margin: auto; 
+	 position: absolute; 
+	 padding: 20px ; 
+	 width: 900px;*/
+	 border: 1px solid #0202f9; 
+	 width: 60%;
+	 height: auto;
+	 padding: 5px;
+}
+
+.elementosLineaFormulario label
+{
+ display: inline-block;
+  width: 60px;
+}
+
+.elementosLineaFormulario  input,
+.elementosLineaFormulario textarea  {
+	height: 30px;
+	width: 80%;
+	margin-bottom: 5px;
+	border: 0;
+	border-bottom: 1px solid black;
+
+
+}
+
+
+.action_cliente{
+  margin-bottom: 5px;
+}
+
+
+
+.datos_4pendeja input {
+height: 30px; 
+width: 15%; 
+margin-bottom: 5px; 
+border: 0; 
+border-bottom: 1px solid black; 
+display: inline-table;
+float: right;
+
+}
+
+
+
+.datos_4pendeja1 {
+	 border: 1px solid #0202f9; 
+	 width: 60%;
+	 height: auto;
+	 padding: 5px;
+
+}
+.action_4pendeja{
+	margin-bottom: 5px; 
+}

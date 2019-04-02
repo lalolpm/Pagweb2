@@ -117,14 +117,14 @@ footer .contedor {
 	margin: 10px 0; 
 	display: block;
 }
-
+/*
 .Registro_clientes form{
 	background: #fff; 
 	margin: auto; 
 	padding: 20px 50px ; 
 	border: 1px solid #0202f9; 
 
-}
+}*/
 .Registro_clientes label {
 	display: block;
 	font-size: 12pt; 
@@ -195,6 +195,7 @@ footer .contedor {
 	border: 1px solid #0202f9; 
 
 }
+
 .Registro_usuario label {
 	display: block;
 	font-size: 12pt; 
@@ -310,11 +311,7 @@ footer .contedor {
 }
 
 
-/************************** Historial de usuario*******************************/
-
-
-
-
+/********************historial*************************************************************/
 
 
 
