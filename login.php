@@ -30,7 +30,7 @@ if(empty($_POST['usuario']) || empty($_POST['clave']))
     $sql = "select * from usuario where usuario = '$user' and clave = '$pass' ";
 
     $sql = ejecutar_query($sql,$conexion);
-    $sql = traer_fila($sql);
+    //$sql = traer_fila($sql);
     
 
     if($sql > 0)

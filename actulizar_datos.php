@@ -1,11 +1,13 @@
 <?php
+session_start();
 include "funciones/conexion_sql_server.php";
 $conexion = db_conectar();
 $alert= "";
-$codigo_datos = $_SESSION['iddatos'];
-session_start();
 
-		$sql = "select * from datos where codigo_datos = '$codigo_datos'";
+
+$codigo_datos = $_SESSION['iddatos'];
+echo 'echi'.$_SESSION['iddatos'];
+		$sql = "select * from datos where codigo_datos = ".  $_SESSION['iddatos'];
 		$resultado = ejecutar_query($sql,$conexion);
 		$row = mssql_fetch_array($resultado);
 
@@ -63,7 +65,7 @@ if (!empty($_POST))
 					<input type="text" name="cedula" id="cedula" placeholder="Cedula">
 
 					<label for="fecnacimiento"> Fecha de Nacimiento </label>
-					<input type="date" name="fecha_nacimiento" id="fecha_nacimiento" placeholder="fecha nacimiento">
+					<input type="date" name="fecha_nacimiento" id="fecha_nacimiento" placeholder="fecha nacimiento" value="<?php echo $row[4]?>">
 
 					<label for="tipo_sangre"> Tipo de Sangre </label>
 					<select name="tipo_sangre" id="tipo_sangre">
@@ -106,7 +108,7 @@ if (!empty($_POST))
 			    </select>
 
 			    <label for="lugar_nacimiento"> Lugar Nacimiento </label>
-			    <input type="text" name="lugar_nacimiento" id="lugar_nacimiento" placeholder="Lugar de Naciemiento" value="<?php echo $row[4]?>">
+			    <input type="text" name="lugar_nacimiento" id="lugar_nacimiento" placeholder="Lugar de Naciemiento" >
 			    
 			    <label for="estado"> Estado </label>
 			    <input type="checkbox" name="estado" id="estado">
