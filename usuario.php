@@ -37,7 +37,18 @@ if (!empty($_POST))
 							'$clave',
 							'',
 							'',
-							'1'";			
+							'1'
+
+							exec sppersona '',@codigo_datos,'','','','','','1'
+
+							exec spcorreo '',
+							@codigo_datos,'','$correo','','1'
+
+							exec spdireccion '',
+							@codigo_datos,'','','','','1'
+
+							exec sptelefono '',
+							@codigo_datos,'','','','1'";			
 		            $resultado = ejecutar_query($sql, $conexion);
 
 			}
@@ -81,7 +92,7 @@ if (!empty($_POST))
 				<input type="text" name="cedula" id="cedula" placeholder="cedula o RNC">
 				
 				<label for="correo"> Correo Electronico </label>
-				<input type="email" name="correo" id="correo" placeholder="Correo Electronico">
+				<input type="text" name="correo" id="correo" placeholder="Correo Electronico">
 				
 				<label for="direccion"> Usuario </label>
 				<input type="text" name="Usuario" id="Usuario" placeholder="Usuario">

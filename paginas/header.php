@@ -1,6 +1,8 @@
-<header>
 
+<header>
+<?php session_start(); ?>
 	
+	<h3 align="left"> <?php echo 'Hola, '. $_SESSION['usuario']?></h3>
 	<h1 class="nombre"> Buho Consulting </h1>
 
 
@@ -9,6 +11,7 @@
 	<label for="btn-menu" class="icon-menu"> </label>
 
 	<nav class="menu">
+
 
 		
 		<ul>
