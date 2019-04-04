@@ -6,7 +6,7 @@ $alert= "";
 
 
 $codigo_datos = $_SESSION['iddatos'];
-echo $_SESSION['iddatos'];
+//echo $_SESSION['iddatos'];
 		$sql = "select * from vista_usuario where codigo_datos= ".  $_SESSION['iddatos'];
 		$resultado = ejecutar_query($sql,$conexion);
 		$row = mssql_fetch_array($resultado);
@@ -14,7 +14,7 @@ echo $_SESSION['iddatos'];
 		$codigo_correo = $row['codigo_correo'];
 		$codigo_direccion = $row['codigo_direccion'];
 		$codigo_telefono = $row['codigo_telefono'];
-		echo $codigo_telefono;
+		//echo $codigo_telefono;
 
 
 if (!empty($_POST))
@@ -35,7 +35,7 @@ if (!empty($_POST))
 
 
 
-		$sql="exec spdatos '$codigo_datos','$pais','$nombre','$cedula','$fecha_nacimiento','','','$estado'
+		$sql="exec spdatos '$codigo_datos','$pais','$nombre','$cedula','$fecha_nacimiento','','$estado'
 
 		exec sppersona '$codigo_persona','$codigo_datos','$sexo','$tipo_sangre','$estado_civil','$lugar_nacimiento','','1'
 
@@ -147,7 +147,7 @@ if (!empty($_POST))
 			    <label for="estado"> Estado </label>
 			    <input type="checkbox" name="estado" id="estado">
 
-                <input type="submit" value="Actualizar Datos" class="btn_sav">
+                <input type="submit" value="Guardar" class="btn_sav">
 
 				</form>
 			

@@ -2,7 +2,7 @@
 <header>
 <?php session_start(); ?>
 	
-	<h3 align="left"> <?php echo 'Hola, '. $_SESSION['usuario']?></h3>
+	<h3 class="usuario"> <?php echo 'Hola, '. $_SESSION['usuario']?></h3>
 	<h1 class="nombre"> Buho Consulting </h1>
 
 
@@ -22,7 +22,8 @@
 					<li> <a href=""> Registro Seguros</a></li>	
 					<li> <a href="Usuario.php">  Registro Usuarios </a></li>
 					<li>  <a href="articulos.php"> Registro de Articulos</a> </li>
-					<li>  <a href="actulizar_datos.php"> Actualizar datos</a> </li>
+					<li>  <a href="actulizar_datos.php"> Actualizar usuario</a> </li>
+					<li><a href="actualizar_cliente.php">Actualizar cliente</a></li>
 
 				</ul>
 			</li>

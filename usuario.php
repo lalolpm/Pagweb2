@@ -25,7 +25,7 @@ if (!empty($_POST))
 
 
 					$conexion = db_conectar();
-					$sql = "exec spdatos '','1','$nombre','$cedula'		,'','','','1'
+					$sql = "exec spdatos '','1','$nombre','$cedula'		,'','','1'
 
 							declare @codigo_datos int 
 							set @codigo_datos= (select max(codigo_datos) from datos)

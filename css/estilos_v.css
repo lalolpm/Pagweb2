@@ -71,6 +71,17 @@ header label {
   text-align: right; 
   
 }
+
+.usuario{ 
+  color: #0202f9;
+  font-weight: normal;
+  font-size: 20px;
+
+  position: relative;
+  text-align: right; 
+  
+}
+
 footer .contedor {
 	display: flex;
 	flex-wrap: wrap;
@@ -119,7 +130,7 @@ footer .contedor {
 }
 
 .Registro_clientes form{
-	background: #fff; 
+	background: #ccc; 
 	margin: auto; 
 	padding: 20px 50px ; 
 	border: 1px solid #0202f9; 
@@ -189,7 +200,7 @@ footer .contedor {
 	display: block;
 }
 .Registro_usuario form{
-	background: #fff; 
+	background: #ccc; 
 	margin: auto;
 	padding: 20px 50px; 
 	border: 1px solid #0202f9; 
@@ -258,7 +269,7 @@ footer .contedor {
 }
 
 .actualizar_datos form{
-	background: #fff; 
+	background: #ccc; 
 	margin: auto;
 	padding: 20px 50px; 
 	border: 1px solid #0202f9; 
@@ -309,24 +320,80 @@ footer .contedor {
 	padding: 10px; 
 }
 
+/***********************Actulizar cliente****************************/
 
-/************************** Historial de usuario*******************************/
+.actualizar_cliente{
+	width:  450px; 
+	margin: auto;
+}
+
+.actualizar_cliente h1 {
+	color: #0202f9; 	
+}
+.actualizar_cliente hr{
+
+	border: 0; 
+	background: #ccc; 
+	height: 1px; 
+	margin: 10px 0; 
+	display: block;
+}
+
+.actualizar_cliente form{
+	background: #ccc; 
+	margin: auto;
+	padding: 20px 50px; 
+	border: 1px solid #0202f9; 
+
+}
+.actualizar_cliente label {
+	display: block;
+	font-size: 12pt; 
+	margin: 15px auto 5px auto; 
+
+}
+.actualizar_cliente input,select {
+	display: block;
+	width: 100%; 
+	font-size: 11pt; 
+	padding: 5px;
+	border: 1px solid #0202f9; 
+	border-radius: 5px; 
+}
+
+.btn_sav
+{
+	font-size: 12pt; 
+	background: #0202f9; 
+	padding: 10px; 
+	color: #fff; 
+	letter-spacing: 1px; 
+	cursor: pointer;
+	margin: 15px auto; 
+}
+
+.alert
+ {
+ 	width: 100%; 
+ 	background: #0202f9;
+ 	border-radius: 6px; 
+ 	margin: 20px auto; 
+ }
+ .msg_error{
+ 	color: #e65656; 
+ }
+.msg_save{
+	color: #126e00; 
+
+}
+.alert p
+{
+	padding: 10px; 
+}
 
 
 
-
-
-
-
-
-/*************************Registro de articulos************************************/
-
-
-
-
-
-
-
+/**************************Registro de articulos *******************************/
 
 
 @media (max-width: 768px)
@@ -374,3 +441,4 @@ footer .contedor {
 
 
 }
+
