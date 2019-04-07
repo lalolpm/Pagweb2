@@ -12,7 +12,7 @@
 <body>
 <?php include "paginas/header.php";  ?>
 <section id="container">
-	<div class="title_page">
+	<div class="facturacion">
 			<h1><i class="imagen"></i>Facturación </h1>
 	</div>
 
@@ -22,7 +22,7 @@
 				 </div>
 
 				 <form name="form_cliente_factura" id="form_cliente_factura" class="datos1">
-				 	<label>Codigo</label>
+				 	 <div class="wd30"><label>Codigo</label>
 							<input type="text" name="codigo" id="codigo" >
 						 </div>
 						 <div class="wd30"> 
@@ -45,10 +45,10 @@
 						 	<label> ARS </label>
 						 	<input type="text" name="ars_cli" id="ars_cli" disabled required> 	
 						 </div>
-						 <div class="wd100">
+						 <!--<div class="wd100">
 						 	<label> Direccion </label>
 						 	<textarea name="dir_cli" id="dir_cli" disabled required>  </textarea>
-						 </div>
+						 </div>-->
 
 				 </form>
 

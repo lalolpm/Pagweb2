@@ -5,9 +5,10 @@ $conexion = db_conectar();
 $alert= "";
 
 
-$codigo_datos = $_SESSION['iddatos'];
+
+$codigo_datos = $_GET['codigo_datos'];
 //echo $_SESSION['iddatos'];
-		$sql = "select * from vista_usuario where codigo_datos= ".  $_SESSION['iddatos'];
+		$sql = "select * from vista_usuario where codigo_datos= '$codigo_datos'";
 		$resultado = ejecutar_query($sql,$conexion);
 		$row = mssql_fetch_array($resultado);
 		$codigo_persona = $row['codigo_persona'];
@@ -35,7 +36,7 @@ if (!empty($_POST))
 
 
 
-		$sql="exec spdatos '$codigo_datos','$pais','$nombre','$cedula','$fecha_nacimiento','','$estado'
+		$sql="exec spdatos '$codigo_datos','1','$nombre','$cedula','$fecha_nacimiento','','$estado'
 
 		exec sppersona '$codigo_persona','$codigo_datos','$sexo','$tipo_sangre','$estado_civil','$lugar_nacimiento','','1'
 
@@ -47,7 +48,11 @@ if (!empty($_POST))
 
 		update usuario set codigo_pss=$codigo_pss where codigo_datos=$codigo_datos ";
 
-		ejecutar_query($sql,$conexion);
+		$resultado = ejecutar_query($sql,$conexion);
+
+		if ($resultado) {
+			$alert = '<p class="msg_save">Usuario actualizado</p>';
+		}
 
 
 
@@ -75,7 +80,7 @@ if (!empty($_POST))
 			
 			<div align="center"><h1> Actualizar Datos Usuario </h1></div>
 			<hr>
-			<div class="alert"></div>
+			<div class="alert"><?php echo $alert;?></div>
 
 				<form action="" method="post">
 					<label for="nombre">Nombre completo</label>
@@ -106,7 +111,7 @@ if (!empty($_POST))
 			    	<option value="AB-"> AB- </option>
 			    </select>
 
-				<label for="pais"> Pais </label>
+				<!--<label for="pais"> Pais </label>
 				<select name="pais" id="pais">
 					<option value=" <?php echo $row['codigo_pais']; ?> "> <?php echo $row['pais']; ?> </option>
 
@@ -115,7 +120,7 @@ if (!empty($_POST))
 					
 					while($lista=mssql_fetch_array($query)){?> 
         			<option value=" <?php echo $lista[0]; ?> "> <?php echo $lista[1]; ?> </option> <?php } ?>
-      			</select>
+      			</select> -->
 
       			<label for="correo"> Correo electronico </label>
 			    <input type="text" name="correo" id="correo" placeholder="Correo electronico" value="<?php echo $row['correo'] ?>">

@@ -23,36 +23,38 @@ $alert= "";
 <?php include "paginas/header.php"; ?>
 
 <section id="container">
-	<div></br><h2>Lista de usuarios</h2></div>
+	<div></br><h2>Lista de clientes</h2></div>
 
 	<table>
 		<tr>
 			<th>Codigo</th>
-			<th>Usuario</th>
 			<th>Nombre</th>
-			<th>Tipo usuario</th>
+			<th>Razon social</th>
+			<th>RNC</th>
 			<th>Telefono</th>
+			<th>Direccion</th>
 			<th>Correo</th>
 			<th>Edicion</th>
 
-		</tr> 
+		</tr>
 
 		<?php 
-		$sql = "select * from vista_usuario";
+		$sql = "select * from vista_suplidores";
 		$sql = ejecutar_query($sql,$conexion);
 		
 
 		while($row = mssql_fetch_array($sql)) { ?>
 
 <tr>
-			<td><?php echo $row['codigo_usuario'];?></td>
-			<td><?php echo $row['usuario'];?></td>
+			<td><?php echo $row['codigo_suplidor'];?></td>
 			<td><?php echo $row['nombre'];?></td>
-			<td><?php echo $row['tipo_usuario'];?></td>
+			<td><?php echo $row['razon_social'];?></td>
+			<td><?php echo $row['DNI'];?></td>
 			<td><?php echo $row['telefono'];?></td>
+			<td><?php echo $row['direccion'];?></td>
 			<td><?php echo $row['correo'];?></td>
 			<td>
-				<b><a class="editar" href="actualizar_datos.php?codigo_datos=<?php echo $row['codigo_datos']?>">Editar</a></b>
+				<b><a class="editar" href="actualizar_suplidor.php?codigo_datos=<?php echo $row['codigo_datos']?>">Editar</a></b>
 			</td>
 
 		</tr> 

@@ -85,7 +85,7 @@ if (!empty($_POST))
 				<input type="text" name="nombre" id="nombre" placeholder="Nombre Completo" value="<?php echo $row['nombre']?>">
 
 				<label for="cedula"> Cedula o RNC  </label>
-				<input type="text" name="cedula" id="nombre" placeholder="Cedula o RNC" value="<?php echo $row['DNI']?>">
+				<input type="text" name="cedula" id="cedula" placeholder="Cedula o RNC" value="<?php echo $row['DNI']?>">
 
 				<label for="numero_afiliado"> Numero Afiliado</label>
 				<input type="text" name="numero_afiliado" id="numero_afiliado" placeholder="Numero Afiliado" value="<?php echo $row['numero_afiliado']?>">

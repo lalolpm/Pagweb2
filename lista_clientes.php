@@ -31,6 +31,7 @@ $alert= "";
 			<th>Nombre</th>
 			<th>Numero afiliado</th>
 			<th>Telefono</th>
+			<th>Direccion</th>
 			<th>Seguro</th>
 			<th>Edicion</th>
 
@@ -48,6 +49,7 @@ $alert= "";
 			<td><?php echo $row['nombre'];?></td>
 			<td><?php echo $row['numero_afiliado'];?></td>
 			<td><?php echo $row['telefono'];?></td>
+			<td><?php echo $row['direccion'];?></td>
 			<td><?php echo $row['descripcion'];?></td>
 			<td>
 				<b><a class="editar" href="actualizar_cliente.php?codigo_datos=<?php echo $row['codigo_datos']?>">Editar</a></b>

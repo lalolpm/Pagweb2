@@ -15,20 +15,17 @@
 
 		 
 		<ul>
-			<li><a href="#"> Inicio </a></li>
+			<li><a href="../Pagweb2"> Inicio </a></li>
 			<li class="submenu"><a href="#"> Mantenimientos <span class="icon-down-open"></span></a>
 				<ul>
 					<li> <a href="Clientes.php"> Resgistro de Clientes </a></li>	
 					<li> <a href=""> Registro Seguros</a></li>	
 					<li> <a href="Usuario.php">  Registro Usuarios </a></li>
 					<li>  <a href="articulos.php"> Registro de Articulos</a> </li>
-
-					<li>  <a href="actulizar_datos.php"> Actualizar datos</a> </li>
 					<li>  <a href="suplidores.php"> Registro  Suplidor </a> </li>
-
-
-					<li>  <a href="actulizar_datos.php"> Actualizar usuario</a> </li>
+					<li>  <a href="lista_usuarios.php"> Lista usuarios</a> </li>
 					<li><a href="lista_clientes.php">Lista clientes</a></li>
+					<li><a href="lista_suplidores.php">Lista suplidores</a></li>
 
 
 				</ul>
