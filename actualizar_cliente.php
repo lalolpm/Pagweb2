@@ -46,7 +46,11 @@ if (!empty($_POST))
 
 			exec sptelefono '$codigo_telefono','$codigo_datos','','$telefono','','1'";
 
-			ejecutar_query($sql,$conexion);
+			$resultado = ejecutar_query($sql,$conexion);
+
+			if($resultado){
+				$alert = '<p class="msg_save">Cliente actualizado</p>';
+			}
 
 
 
@@ -74,7 +78,7 @@ if (!empty($_POST))
 			
 			<div align="center"><h1> Actualizar Datos Clientes </h1></div>
 			<hr>
-			<div class="alert"></div>
+			<div class="alert"><?php echo $alert;?></div>
 
 				<form action="" method="post">
 					<label for="nombre"> Nombre</label>
