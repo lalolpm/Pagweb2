@@ -67,22 +67,22 @@
    			<h5> Datos Doctor</h5>
 		</div>
 
-
 		<form name="form_doctor" id="form_doctor" class="datos_doctor">
-			
-			<div class="wd30">
-			 	<label> Codigo Doctor </label>
-				<input type="text" name="cod_doc" id="cod_doc">
-			</div>
-			<div class="wd30">
-				<label> Nombre Doctor </label>
-				<input type="text" name="nom_usu" id="nom_usu">
-			 </div>
-			 <div class="wd30">
-			 	<label> Telefono</label>
-			 	<input type="text" name="tel_usu" id="tel_usu">
-			 </div>
+			<div class="agrupar-doctor">
+				<div class="wd30">
+				 	<label> Codigo Doctor </label>
+					<input type="text" name="cod_doc" id="cod_doc">
+				</div>
+				<div class="wd30">
+					<label> Nombre Doctor </label>
+					<input type="text" name="nom_usu" id="nom_usu">
+				 </div>
+				 <div class="wd30">
+				 	<label> Telefono</label>
+				 	<input type="text" name="tel_usu" id="tel_usu">
+				 </div>
 
+			</div> 
 		</form>
 
 
@@ -123,24 +123,24 @@
 	<div class="action_4pendeja"></div>
 
 	<form name="form_4pendeja" id="form_4pendeja" class="datos_4pendeja1">
-		
-		<div class="dd100">
-   			<label> TA: </label>
-   			<input type="text" name="txt_ta" id="txtta">
-   		</div>
-   		<div class="dd100">
-   			<label> FC: </label>
-   			<input type="text" name="txt_fc" id="txt_fc">
-   		</div>
-   		<div class="dd100"> 
-   			<label> FR: </label>
-   			<input type="text" name="txt_fr" id="txt_fr">
-   		</div>
-   		<div class="dd100"> 
-   			<label> Sat 02: </label>
-   			<input type="text" name="txt_sat" id="txt_sat">
-   	    </div>
-
+		<div class="agrupar-pendeja">
+			<div class="dd100">
+   				<label> TA: </label>
+   				<input type="text" name="txt_ta" id="txtta">
+   				</div>
+   			<div class="dd100">
+   				<label> FC: </label>
+   				<input type="text" name="txt_fc" id="txt_fc">
+   				</div>
+   			<div class="dd100"> 
+   				<label> FR: </label>
+   				<input type="text" name="txt_fr" id="txt_fr">
+   				</div>
+   			<div class="dd100"> 
+   				<label> Sat 02: </label>
+   				<input type="text" name="txt_sat" id="txt_sat">
+   	    	</div>
+		</div>
 	</form>
 </div>
 	

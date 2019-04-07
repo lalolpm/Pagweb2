@@ -41,10 +41,12 @@ margin-bottom: 5px;
 border: 0; 
 border-bottom: 1px solid black; 
 display: inline-table;
-float: right;
+float: auto;
 
 }
+.agrupar-pendeja{
 
+}
 
 
 .datos_4pendeja1 {
@@ -57,3 +59,4 @@ float: right;
 .action_4pendeja{
 	margin-bottom: 5px; 
 }
+
