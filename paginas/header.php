@@ -19,7 +19,7 @@
 			<li class="submenu"><a href="#"> Mantenimientos <span class="icon-down-open"></span></a>
 				<ul>
 					<li> <a href="Clientes.php"> Resgistro de Clientes </a></li>	
-					<li> <a href=""> Registro Seguros</a></li>	
+					<li> <a href="Seguros.php"> Registro Seguros</a></li>	
 					<li> <a href="Usuario.php">  Registro Usuarios </a></li>
 					<li>  <a href="articulos.php"> Registro de Articulos</a> </li>
 					<li>  <a href="suplidores.php"> Registro  Suplidor </a> </li>

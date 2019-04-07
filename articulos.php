@@ -19,9 +19,21 @@
 			<div class="alert"></div>
 
 			<form>
-				
-				
-				
+				<label for="Codigo"> Codigo </label>
+				<input type="text" name="cod_pro" id="cod_pro" placeholder="Codigo Producto">
+
+				<label for="Descripcion"> Descripcion  </label>
+				<input type="text" name="des_pro" id="des_pro" placeholder="Descripcion Producto">
+
+				<label for="Precio_Producto"> Precio Producto </label>
+				<input type="text" name="Precio_venta" id="Precio_venta" placeholder="Precio Producto">
+				<label for="fecven"> Fecha vencimiento </label>
+				<input type="date" name="fecven" id="fecven" placeholder="Fecha vencimiento">
+				<label for="lote"> Lote </label>
+				<input type="text" name="Lote" id="Lote" placeholder="Lote">				
+				<label for="estado"> Estado </label>
+				<input type="checkbox" name="estado" id="estado">
+
 				<input type="submit" value="Crear Articulos" class="btn_save">
 
 			</form>

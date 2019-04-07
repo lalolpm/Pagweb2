@@ -58,7 +58,7 @@
 			 	<div class="datos1">
 			 		<div class="wd50"> 
 			 			<label> Vendedor</label>
-			 			<p> Puto chino </p>
+			 			<p> <?php  echo$_SESSION['Nombre']; ?> </p>
 			 		</div>
 			 		<div class="wd50">
 			 			<label> Acciones </label>
@@ -113,8 +113,37 @@
 			  				<a href="link_delete" href="#" onclick="event.preventDefault(); 
 			  				del_product_detalle(1);"><i class="far fa-trash-alt"></i></a>
 			  			</td>
-			  		</tr>  		
+			  		</tr> 
+
+			  		<tr>
+			  			<td>2</td>
+			  			<td colspan="2"> china </td>
+			  			<td class="textcenter">1</td>
+			  			<td class="textright">1000.00</td>
+			  			<td class="textright">1000.00</td>
+			  			<td class="">
+			  				<a href="link_delete" href="#" onclick="event.preventDefault(); 
+			  				del_product_detalle(1);"><i class="far fa-trash-alt"></i></a>
+			  			</td>
+			  		</tr> 
 			  	</tbody>
+			  	<tfoot>
+			  		<tr> 
+			  			<td colspan="5" class="textright"> SUBTOTAL Q.</td>
+			  			<td class="textright"> 10000.00 </td>
+			  		</tr>
+			  		<tr>
+			  			<td colspan="5" class="textright"> ITBIS (18%)</td>
+			  			<td class="textright">300</td>	
+			  		</tr>
+			  		<tr>
+			  			<td colspan="5" class="textright"> TOTAL Q.</td>
+			  			<td class="textright">1000.00</td>
+			  		</tr>
+
+
+			  	</tfoot>
+
 			  </table>
 </section>
 

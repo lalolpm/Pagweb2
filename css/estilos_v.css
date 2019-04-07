@@ -241,6 +241,81 @@ footer .contedor {
 {
 	padding: 10px; 
 }
+/*************************************Datos Seguro *****************************/
+.datos_seguros{
+	width:  450px; 
+	margin: auto;
+}
+
+.datos_seguros h1 {
+	color: #0202f9; 	
+}
+.datos_seguros hr{
+
+	border: 0; 
+	background: #ccc; 
+	height: 1px; 
+	margin: 10px 0; 
+	display: block;
+}
+
+.datos_seguros form{
+	background: #ccc; 
+	margin: auto;
+	padding: 20px 50px; 
+	border: 1px solid #0202f9; 
+
+}
+.datos_seguros label {
+	display: block;
+	font-size: 12pt; 
+	margin: 15px auto 5px auto; 
+
+}
+.datos_seguros input,select {
+	display: block;
+	width: 100%; 
+	font-size: 11pt; 
+	padding: 5px;
+	border: 1px solid #0202f9; 
+	border-radius: 5px; 
+}
+
+.btn_sav
+{
+	font-size: 12pt; 
+	background: #0202f9; 
+	padding: 10px; 
+	color: #fff; 
+	letter-spacing: 1px; 
+	cursor: pointer;
+	margin: 15px auto; 
+}
+
+.alert
+ {
+ 	width: 100%; 
+ 	background: #126e00;
+ 	border-radius: 6px; 
+ 	text-align: center;
+ 	margin: 20px auto; 
+ }
+ .msg_error{
+ 	color: #e65656; 
+ }
+.msg_save{
+	color: #fff; 
+
+}
+
+.alert p
+{
+	padding: 10px; 
+}
+
+
+
+
 /***************************Actualiza datos*************************************/
 .actualizar_datos{
 	width:  450px; 
@@ -464,7 +539,74 @@ footer .contedor {
 /*************************Registro de articulos************************************/
 
 
+.Registro_articulos{
+	width:  450px; 
+	margin: auto;
+}
+.Registro_articulos h1 {
+	color: #0202f9; 	
+}
+.Registro_articulos hr{
 
+	border: 0; 
+	background: #ccc; 
+	height: 1px; 
+	margin: 10px 0; 
+	display: block;
+}
+.Registro_articulos form{
+	background: #ccc; 
+	margin: auto;
+	padding: 20px 50px; 
+	border: 1px solid #0202f9; 
+
+}
+
+.Registro_articulos label {
+	display: block;
+	font-size: 12pt; 
+	margin: 15px auto 5px auto; 
+
+}
+.Registro_articulos input,select {
+	display: block;
+	width: 100%; 
+	font-size: 11pt; 
+	padding: 5px;
+	border: 1px solid #0202f9; 
+	border-radius: 5px;
+
+}
+
+.btn_save
+{
+	font-size: 12pt; 
+	background: #0202f9; 
+	padding: 10px; 
+	color: #fff; 
+	letter-spacing: 1px; 
+	cursor: pointer;
+	margin: 15px auto; 
+}
+
+.alert
+ {
+ 	width: 100%; 
+ 	background: #0202f9;
+ 	border-radius: 6px; 
+ 	margin: 20px auto; 
+ }
+ .msg_error{
+ 	color: #e65656; 
+ }
+.msg_save{
+	color: #126e00; 
+
+}
+.alert p
+{
+	padding: 10px; 
+}
 
 
 
