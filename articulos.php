@@ -1,3 +1,32 @@
+<?php
+session_start();
+include "funciones/conexion_sql_server.php";
+$conexion = db_conectar();
+$alert= "";
+
+if(!empty($_POST))
+{
+	$producto = $_POST['producto'];
+	$suplidor = $_POST['suplidor'];
+	$precio_venta = $_POST['precio_venta'];
+	$precio_compra = $_POST['precio_compra'];
+	$cantidad = $_POST['cantidad'];
+	$fecha_vencimiento = $_POST['fecha_vencimiento'];
+	$lote = $_POST['lote'];
+
+	$sql = "exec spproductos '','$suplidor','$producto','$precio_venta','$cantidad','','$precio_compra','$fecha_vencimiento','$lote','','1'
+	";
+
+	$resultado = ejecutar_query($sql,$conexion);
+
+	if ($resultado) {
+		$alert = '<p class="msg_save">Producto creado</p>';
+	}
+
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,21 +45,45 @@
 			
 			<h1>Registro Articulos </h1>
 			<hr>
-			<div class="alert"></div>
+			<div class="alert"><?php echo $alert;?></div>
 
-			<form>
-				<label for="Codigo"> Codigo </label>
-				<input type="text" name="cod_pro" id="cod_pro" placeholder="Codigo Producto">
+			<form action="" method="post">
+				<label for="producto"> Nombre producto </label>
+				<input type="text" name="producto" id="producto" placeholder="Nombre producto">
 
-				<label for="Descripcion"> Descripcion  </label>
-				<input type="text" name="des_pro" id="des_pro" placeholder="Descripcion Producto">
+				<label for="suplidor"> Suplidor </label>
+				<select name="suplidor" id="suplidor">
+			    	<?php $query="select * from vista_suplidores";
+						$query=ejecutar_query($query,$conexion);
+					
+					while($lista=mssql_fetch_array($query)){?> 
+        			<option value=" <?php echo $lista[0]; ?> "> <?php echo $lista[1]; ?> </option> <?php } ?>
+      			</select>
 
-				<label for="Precio_Producto"> Precio Producto </label>
-				<input type="text" name="Precio_venta" id="Precio_venta" placeholder="Precio Producto">
-				<label for="fecven"> Fecha vencimiento </label>
-				<input type="date" name="fecven" id="fecven" placeholder="Fecha vencimiento">
+				<label for="precio_venta"> Precio de venta </label>
+				<input type="text" name="precio_venta" id="precio_venta" placeholder="Precio venta">
+
+				<label for="cantidad"> Cantidad </label>
+				<input type="text" name="cantidad" id="cantidad" placeholder="Cantidad">
+
+				<label for="precio_compra"> Precio de compra </label>
+				<input type="text" name="precio_compra" id="precio_compra" placeholder="Precio de compra">
+
+				<!--<label for="unidad"> Unidad de venta </label>
+				<input type="combobox" name="unidad" id="unidad">
+				<select>
+					<option value="1">Uno</option>
+					<option value="2">Paquete 6</option>
+					<option value="3">Paquete 12</option>
+
+				</select> -->
+
+				<label for="fecha_vencimiento"> Fecha vencimiento </label>
+				<input type="date" name="fecha_vencimiento" id="fecha_vencimiento" placeholder="Fecha vencimiento">
+
 				<label for="lote"> Lote </label>
-				<input type="text" name="Lote" id="Lote" placeholder="Lote">				
+				<input type="text" name="lote" id="lote" placeholder="Lote">	
+
 				<label for="estado"> Estado </label>
 				<input type="checkbox" name="estado" id="estado">
 
