@@ -26,6 +26,7 @@
 					<li>  <a href="actulizar_datos.php"> Actualizar datos</a> </li>
 					<li>  <a href="suplidores.php"> Registro  Suplidor </a> </li>
 
+
 					<li>  <a href="actulizar_datos.php"> Actualizar usuario</a> </li>
 					<li><a href="lista_clientes.php">Lista clientes</a></li>
 
