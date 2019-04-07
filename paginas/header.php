@@ -23,9 +23,12 @@
 					<li> <a href="Usuario.php">  Registro Usuarios </a></li>
 					<li>  <a href="articulos.php"> Registro de Articulos</a> </li>
 <<<<<<< HEAD
+<<<<<<< HEAD
 					<li>  <a href="actulizar_datos.php"> Actualizar datos</a> </li>
 					<li>  <a href="suplidores.php"> Registro  Suplidor </a> </li>
 =======
+=======
+>>>>>>> parent of 325d750... g
 					<li>  <a href="actulizar_datos.php"> Actualizar usuario</a> </li>
 					<li><a href="lista_clientes.php">Lista clientes</a></li>
 >>>>>>> parent of 325d750... g
