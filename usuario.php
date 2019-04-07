@@ -25,7 +25,7 @@ if (!empty($_POST))
 
 
 					$conexion = db_conectar();
-					$sql = "exec spdatos '','1','$nombre','$cedula'		,'','','','1'
+					$sql = "exec spdatos '','1','$nombre','$cedula'		,'','','1'
 
 							declare @codigo_datos int 
 							set @codigo_datos= (select max(codigo_datos) from datos)
@@ -82,7 +82,7 @@ if (!empty($_POST))
 			
 			<h1>Registro Usuario </h1>
 			<hr>
-			<div class="alert"></div>
+			<div class="alert"><?php echo $alert;?></div>
 
 			<form action="" method="post">
 				<label for="nombre"> Nombre</label>

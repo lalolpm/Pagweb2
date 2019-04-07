@@ -6,7 +6,7 @@ $alert= "";
 
 
 $codigo_datos = $_SESSION['iddatos'];
-echo $_SESSION['iddatos'];
+//echo $_SESSION['iddatos'];
 		$sql = "select * from vista_usuario where codigo_datos= ".  $_SESSION['iddatos'];
 		$resultado = ejecutar_query($sql,$conexion);
 		$row = mssql_fetch_array($resultado);
@@ -14,7 +14,7 @@ echo $_SESSION['iddatos'];
 		$codigo_correo = $row['codigo_correo'];
 		$codigo_direccion = $row['codigo_direccion'];
 		$codigo_telefono = $row['codigo_telefono'];
-		echo $codigo_telefono;
+		//echo $codigo_telefono;
 
 
 if (!empty($_POST))
@@ -31,10 +31,11 @@ if (!empty($_POST))
 		$estado_civil = $_POST['estado_civil'];
 		$lugar_nacimiento = $_POST['lugar_nacimiento'];
 		$estado = $_POST['estado'];
+		$codigo_pss = $_POST['codigo_pss'];
 
 
 
-		$sql="exec spdatos '$codigo_datos','$pais','$nombre','$cedula','$fecha_nacimiento','','','$estado'
+		$sql="exec spdatos '$codigo_datos','$pais','$nombre','$cedula','$fecha_nacimiento','','$estado'
 
 		exec sppersona '$codigo_persona','$codigo_datos','$sexo','$tipo_sangre','$estado_civil','$lugar_nacimiento','','1'
 
@@ -42,7 +43,9 @@ if (!empty($_POST))
 
 		exec spcorreo '$codigo_correo','$codigo_datos','','$correo','','1'
 
-		exec sptelefono '$codigo_telefono','$codigo_datos','','$telefono','','1'";
+		exec sptelefono '$codigo_telefono','$codigo_datos','','$telefono','','1'
+
+		update usuario set codigo_pss=$codigo_pss where codigo_datos=$codigo_datos ";
 
 		ejecutar_query($sql,$conexion);
 
@@ -80,6 +83,10 @@ if (!empty($_POST))
 
 					<label for="cedula"> Cedula </label>
 					<input type="text" name="cedula" id="cedula" placeholder="Cedula" value="<?php echo $row['DNI']?>">
+
+					<label for="codigo_pss"> Codigo PSS</label>
+				<input type="text" name="codigo_pss" id="codigo_pss" placeholder="Codigo PSS" value="<?php echo $row['codigo_pss']?>">
+
 					<label for="telefono"> Telefono </label>
 			    	<input type="text" name="telefono" id="telefono" placeholder="Telefono" value="<?php echo $row['telefono']?>">
 
@@ -140,7 +147,7 @@ if (!empty($_POST))
 			    <label for="estado"> Estado </label>
 			    <input type="checkbox" name="estado" id="estado">
 
-                <input type="submit" value="Actualizar Datos" class="btn_sav">
+                <input type="submit" value="Guardar" class="btn_sav">
 
 				</form>
 			
