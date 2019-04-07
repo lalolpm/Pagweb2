@@ -28,29 +28,31 @@ $alert= "";
 	<table>
 		<tr>
 			<th>Codigo</th>
-			<th>Usuario</th>
-			<th>Nombre</th>
-			<th>Tipo usuario</th>
-			<th>Telefono</th>
-			<th>Correo</th>
+			<th>Producto</th>
+			<th>Precio venta</th>
+			<th>Cantidad existente</th>
+			<th>Suplidor</th>
+			<th>Fecha vencimiento</th>
+			<th>Lote</th>
 			<th>Edicion</th>
 
 		</tr> 
 
 		<?php 
-		$sql = "select * from vista_usuario";
+		$sql = "select * from productos";
 		$sql = ejecutar_query($sql,$conexion);
 		
 
 		while($row = mssql_fetch_array($sql)) { ?>
 
 <tr>
-			<td><?php echo $row['codigo_usuario'];?></td>
-			<td><?php echo $row['usuario'];?></td>
+			<td><?php echo $row['codigo_producto'];?></td>
+			<td><?php echo $row['producto'];?></td>
+			<td><?php echo $row['precio_venta'];?></td>
+			<td><?php echo $row['cantidad_existente'];?></td>
 			<td><?php echo $row['nombre'];?></td>
-			<td><?php echo $row['tipo_usuario'];?></td>
-			<td><?php echo $row['telefono'];?></td>
-			<td><?php echo $row['correo'];?></td>
+			<td><?php echo $row['fecha_vencimiento'];?></td>
+			<td><?php echo $row['lote'];?></td>
 			<td>
 				<b><a class="editar" href="actualizar_datos.php?codigo_datos=<?php echo $row['codigo_datos']?>">Editar</a></b>
 			</td>
