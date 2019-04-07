@@ -442,3 +442,31 @@ footer .contedor {
 
 }
 
+/*****************lista de clientes**********************/
+#container h2{
+	font-size: 20px;
+	display: inline-block;
+}
+
+table{
+	border-collapse: collapse;
+	font-size: 20px;
+	width: 100%;
+
+}
+
+table th{
+	text-align: left;
+	padding: 10px;
+	background: #3d7ba8;
+	color: #fff;
+
+}
+
+table tr:nth-child(odd){
+	background: #fff;
+}
+
+table td{
+	font-size: 18px;
+}

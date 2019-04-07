@@ -4,8 +4,10 @@ include "funciones/conexion_sql_server.php";
 $conexion = db_conectar();
 $alert= "";
 
+$cod = $_GET['codigo_datos'];
 
-		$sql = "select * from vista_cliente where codigo_datos= '23'"  ;
+
+		$sql = "select * from vista_cliente where codigo_datos= '$cod'"  ;
 		$resultado = ejecutar_query($sql,$conexion);
 		$row = mssql_fetch_array($resultado);
 		$codigo_datos = $row['codigo_datos'];
@@ -14,8 +16,8 @@ $alert= "";
 		$codigo_correo = $row['codigo_correo'];
 		$codigo_direccion = $row['codigo_direccion'];
 		$codigo_telefono = $row['codigo_telefono'];
-		echo $row['codigo_seguro'];
-		echo $row['descripcion'];
+		//echo $row['codigo_seguro'];
+		//echo $row['descripcion'];
 
 if (!empty($_POST))
 	{
@@ -112,9 +114,9 @@ if (!empty($_POST))
 				<label for="sexo"> Sexo </label>
 			    <select name="sexo" id="sexo">
 			    	<option value=" <?php echo $row['sexo']; ?> "> <?php echo $row['sexo']; ?> </option>
-			    	<option value="1"> Masculino </option>
-			    	<option value="2"> Femenino</option>
-			    	<option value="3"> Otros </option>
+			    	<option value="Masculino"> Masculino </option>
+			    	<option value="Femenino"> Femenino</option>
+			    	<option value="Otros"> Otros </option>
 
 			    </select>
 

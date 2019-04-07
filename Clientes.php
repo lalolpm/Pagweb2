@@ -4,10 +4,6 @@ include "funciones/conexion_sql_server.php";
 $conexion = db_conectar();
 $alert= "";
 
-		$sql = "select * from vista_cliente where codigo_datos= '$codigo_cliente'"  ;
-		$resultado = ejecutar_query($sql,$conexion);
-		$row = mssql_fetch_array($resultado);
-
 if (!empty($_POST))
 	{
 		$nombre = $_POST['nombre'];
@@ -28,7 +24,7 @@ if (!empty($_POST))
 			declare @codigo_datos int 
 			set @codigo_datos= (select max(codigo_datos) from datos)
 
-			exec spcliente '',@codigo_datos,'1','','$seguro'
+			exec spcliente '',@codigo_datos,'1','$numero_afiliado','$seguro'
 
 			exec sppersona '',@codigo_datos,'$sexo','$tipo_sangre','$estado_civil','','','1'
 
@@ -110,7 +106,7 @@ if (!empty($_POST))
 
 			    <label for="tipo_sangre"> Tipo de Sangre </label>
 					<select name="tipo_sangre" id="tipo_sangre">
-						<option value=" <?php echo $row['tipo_sangre']; ?> "> <?php echo $row['tipo_sangre']; ?> </option>
+						
 			    	<option value="A+"> A+ </option>
 			    	<option value="B+"> B+</option>
 			    	<option value="O+"> O+ </option>
