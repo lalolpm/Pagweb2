@@ -11,15 +11,16 @@
 		if(!empty($_POST ['cliente']))
 			{
 				$cod = $_POST['cliente']; 
-				$query = ejecutar_query($conection,"select * from  cliente where cod like '$codigo_cliente' and estado ='1' "); 
+				$query = sqlsrv_query($conection,"select * from  vista_cliente where cod like '$codigo_cliente' and estado ='1' "); 
 
 
-				sqlsrv_close($conection); 
-				$result = sqlsrv_num_rows($query); 
+				mssql_close($conection); 
+				$result = sqlsrv_fetch_array($query); 
 
 				$data = ''; 
 				if ($result > 0) {
-					$data = sqlsrv_fetch_assoc($query);
+					$data = mssql_fetch_assoc($query);
+
 				}
 				else {
 					$data =0; 
