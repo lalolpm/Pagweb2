@@ -10,15 +10,10 @@
 	{
 		
 		$Descripcion = $_POST['descripcion'];
-		$fecha_registro = $_POST['fecha_registro'];
-		$estado = $_POST ['estado'];  
+		$tipo_seguro = $_POST ['tipo_seguro'];  
 
 		$sql=" 
-
-			declare @codigo_seguro int 
-			set @codigo_seguro =(select max(codigo_seguro) from seguros)
-
-			exec spSeguros '@codigo_seguro','','','$fecha_registro','$Descripcion','1'
+			exec spSeguros '','$tipo_seguro','$Descripcion','1'
 
 		";
 
@@ -69,8 +64,14 @@
 
 				<label for="Descripcion"> Descripcion  </label>
 				<input type="text" name="des_seg" id="des_seg" placeholder="Descripcion ">
-				<label for="fecha_registro"> Fecha Registro</label>
-				<input type="date" name="fec_seg" id="fec_seg" placeholder="Fecha Registro">
+
+				<label for="tipo_seguro"> Tipo de seguro </label>
+				<select name="tipo_seguro">
+					<option value="1"> Full </option>
+				</select>
+				<!--<label for="fecha_registro"> Fecha Registro</label>
+				<input type="date" name="fec_seg" id="fec_seg" placeholder="Fecha Registro">-->
+
 				<label for="estado"> Estado </label>
 				<input type="checkbox" name="estado" id="estado">
 
