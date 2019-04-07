@@ -167,17 +167,19 @@ footer .contedor {
 .alert
  {
  	width: 100%; 
- 	background: #0202f9;
+ 	background: #126e00;
  	border-radius: 6px; 
+ 	text-align: center;
  	margin: 20px auto; 
  }
  .msg_error{
  	color: #e65656; 
  }
 .msg_save{
-	color: #126e00; 
+	color: #fff; 
 
 }
+
 .alert p
 {
 	padding: 10px; 
@@ -235,17 +237,20 @@ footer .contedor {
 .alert
  {
  	width: 100%; 
- 	background: #0202f9;
+ 	background: #126e00;
  	border-radius: 6px; 
+ 	text-align: center;
  	margin: 20px auto; 
  }
  .msg_error{
  	color: #e65656; 
  }
 .msg_save{
-	color: #126e00; 
+	color: #fff; 
 
 }
+
+
 .alert p
 {
 	padding: 10px; 
@@ -304,17 +309,19 @@ footer .contedor {
 .alert
  {
  	width: 100%; 
- 	background: #0202f9;
+ 	background: #126e00;
  	border-radius: 6px; 
+ 	text-align: center;
  	margin: 20px auto; 
  }
  .msg_error{
  	color: #e65656; 
  }
 .msg_save{
-	color: #126e00; 
+	color: #fff; 
 
 }
+
 .alert p
 {
 	padding: 10px; 

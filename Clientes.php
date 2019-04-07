@@ -34,7 +34,11 @@ if (!empty($_POST))
 
 			exec sptelefono '',@codigo_datos,'','$telefono','','1'";
 
-			ejecutar_query($sql,$conexion);
+			$resultado = ejecutar_query($sql,$conexion);
+
+			if($resultado){
+				$alert = '<p class="msg_save">Cliente creado</p>';
+			}
 
 
 
@@ -60,7 +64,7 @@ if (!empty($_POST))
 			
 			<h1>Registro Clientes </h1>
 			<hr>
-			<div class="alert"></div>
+			<div class="alert"><?php echo $alert; ?></div>
 
 			<form action="" method="post">
 				<label for="nombre"> Nombre</label>
@@ -119,7 +123,7 @@ if (!empty($_POST))
 
 			    <label for="estado_civil" > Estado Civil </label>
 			    <select name="estado_civil" id="estado_civil">
-			    	<option value=" <?php echo $row['estado_civil']; ?> "> <?php echo $row['estado_civil']; ?> </option>
+			    	
 			    	<option value="Soltero"> Soltero </option>
 			    	<option value="Casado"> Casado</option>
 			    	<option value="Otro"> Otro </option>
