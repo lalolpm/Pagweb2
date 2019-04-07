@@ -15,7 +15,7 @@ if(empty($_POST['usuario']) || empty($_POST['clave']))
 {
   $alert = "Ingresar usuario y clave";
 
-}
+ }
 
   else
   {

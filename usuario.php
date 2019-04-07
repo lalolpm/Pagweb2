@@ -16,7 +16,7 @@ if (!empty($_POST))
 			{
 				include "funciones/conexion_sql_server.php"; 
 
-				$nombre  = $_POST['nombre']; 
+				$nombre  = $_POST['nombre'];  
 				$cedula  = $_POST['cedula']; 
 				$correo  = $_POST['correo']; 
 				$Usuario = $_POST['Usuario']; 

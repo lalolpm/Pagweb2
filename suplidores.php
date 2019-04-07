@@ -15,7 +15,7 @@
 				<div class="Registro_suplidores">
 					
 					<h1>Registro Suplidores </h1>
-					<hr>
+					<hr> 
 					<div class="alert"></div>
 
 					<form>

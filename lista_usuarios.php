@@ -34,7 +34,7 @@ $alert= "";
 			<th>Seguro</th>
 			<th>Edicion</th>
 
-		</tr>
+		</tr> 
 
 		<?php 
 		$sql = "select * from vista_cliente";

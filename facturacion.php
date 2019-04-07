@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1,minimum-scale=1"> 
 	
 	<?php include "paginas/scripts.php"; ?>
-
+    <link rel="stylesheet"  href="css/estilosW.css">
 </head>
 <body>
 <?php include "paginas/header.php";  ?>
@@ -16,8 +16,8 @@
 			<h1><i class="imagen"></i>Facturación </h1>
 	</div>
 
-			<div class="datos_clientes">
-				<div class="action_clientes">
+			<div class="datos_cliente">
+				<div class="action_cliente">
 					<h4> DATOS PACIENTES </h4>
 				 </div>
 
@@ -84,7 +84,7 @@
 			  		</tr>
 
 			  		<tr>
-			  			<th><input type="text" name="txt_cod_producto" id="txt_cod_producto"> </th>
+			  			<td><input type="text" name="txt_cod_producto" id="txt_cod_producto"> </td>
 			  			<td id="txt_descripcion">-</td>
 			  			<td id="txt_existencia">-</td>
 			  			<td><input type="text" name="txt_cant_producto" id="txt_cant_producto" value="0" min="1" disabled></td>
@@ -101,6 +101,20 @@
 			  			<th>Acción</th>
 			  		</tr>
 			  	</thead>
+
+			  	<tbody id="detalle_venta">
+			  		<tr>
+			  			<td>1</td>
+			  			<td colspan="2"> UNA VAINa</td>
+			  			<td class="textcenter">1</td>
+			  			<td class="textright">100.00</td>
+			  			<td class="textright">100.00</td>
+			  			<td class="">
+			  				<a href="link_delete" href="#" onclick="event.preventDefault(); 
+			  				del_product_detalle(1);"><i class="far fa-trash-alt"></i></a>
+			  			</td>
+			  		</tr>  		
+			  	</tbody>
 			  </table>
 </section>
 
