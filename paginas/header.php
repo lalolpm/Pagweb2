@@ -25,6 +25,7 @@
 					<li>  <a href="suplidores.php"> Registro  Suplidor </a> </li>
 					<li>  <a href="lista_usuarios.php"> Lista usuarios</a> </li>
 					<li><a href="lista_clientes.php">Lista clientes</a></li>
+					<li><a href="lista_articulos.php">Lista articulos</a></li>
 					<li><a href="lista_suplidores.php">Lista suplidores</a></li>
 
 

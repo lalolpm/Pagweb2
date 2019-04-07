@@ -1,6 +1,7 @@
 <?php
 
 	include "funciones/conexion_sql_server.php"; 
+	$conexion = db_conectar();
 
 	if(!empty($_POST))
 	{
@@ -11,11 +12,11 @@
 		if(!empty($_POST ['cliente']))
 			{
 				$cod = $_POST['cliente']; 
-				$query = sqlsrv_query($conection,"select * from  vista_cliente where cod like '$codigo_cliente' and estado ='1' "); 
+				$query = ejecutar_query("select * from  vista_cliente where codigo_cliente= '$cod'  ",$conexion); 
 
 
-				mssql_close($conection); 
-				$result = sqlsrv_fetch_array($query); 
+				mssql_close($conexion); 
+				$result = mssql_fetch_array($query); 
 
 				$data = ''; 
 				if ($result > 0) {
@@ -26,7 +27,7 @@
 					$data =0; 
 				}
 			}
-			echo json_encode($data,JSON_UNESCAPED_UNICODE); 
+			echo json_encode($data); 
 		}
 	exit;
 }
