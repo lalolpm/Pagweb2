@@ -82,7 +82,7 @@ if (!empty($_POST))
 			
 			<h1>Registro Usuario </h1>
 			<hr>
-			<div class="alert"><?php echo $alert;?></div>
+			<div class="alert"></div>
 
 			<form action="" method="post">
 				<label for="nombre"> Nombre</label>
