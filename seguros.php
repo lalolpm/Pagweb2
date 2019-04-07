@@ -9,13 +9,13 @@
 	if (!empty($_POST)) 
 	{
 		
-		$Descripcion = $_POST['descripcion'];
-		$tipo_seguro = $_POST ['tipo_seguro'];  
+		$descripcion = $_POST['descripcion'];
+		$tipo_seguro = $_POST['tipo_seguro'];  
 
-		$sql=" 
-			exec spSeguros '','$tipo_seguro','$Descripcion','1'
-
+		$sql="exec spSeguros '','$tipo_seguro','$descripcion','1'
 		";
+
+		$resultado = ejecutar_query($sql,$conexion);
 
 		if ($resultado) {
 			$alert='<p class= "msg_save"> Seguro creado</p>'; 
@@ -24,16 +24,7 @@
 
 
 
-
   ?>
-
-
-
-
-
-
-
-
 
 
 
@@ -56,14 +47,14 @@
 	</div>
 
 	<div class="datos_seguros">
+		<div class="alert"><?php echo $alert;?></div>
 		
-
 		<form action="" method="post">
-				<label for="Codigo"> Codigo</label>
-				<input type="text" name="cod_seg" id="cod_seg" placeholder="Nombre Completo">
+				<!--<label for="Codigo"> Codigo</label>
+				<input type="text" name="cod_seg" id="cod_seg" placeholder="Nombre Completo">-->
 
-				<label for="Descripcion"> Descripcion  </label>
-				<input type="text" name="des_seg" id="des_seg" placeholder="Descripcion ">
+				<label for="descripcion"> Descripcion  </label>
+				<input type="text" name="descripcion" id="descripcion" placeholder="Descripcion ">
 
 				<label for="tipo_seguro"> Tipo de seguro </label>
 				<select name="tipo_seguro">
@@ -75,7 +66,7 @@
 				<label for="estado"> Estado </label>
 				<input type="checkbox" name="estado" id="estado">
 
-				<input type="submit" value="Crear Seguros" class="btn_save">
+				<input type="submit" value="Crear Seguro" class="btn_save">
 
 	</div>
 

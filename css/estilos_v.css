@@ -156,7 +156,7 @@ footer .contedor {
 .alert
  {
  	width: 100%; 
- 	background: #0202f9;
+ 	background: #126e00;
  	border-radius: 6px; 
  	margin: 20px auto; 
  }
@@ -164,7 +164,7 @@ footer .contedor {
  	color: #e65656; 
  }
 .msg_save{
-	color: #126e00; 
+	color: #fff; 
 
 }
 .alert p
@@ -226,15 +226,15 @@ footer .contedor {
 .alert
  {
  	width: 100%; 
- 	background: #0202f9;
+ 	background: #126e00;
  	border-radius: 6px; 
  	margin: 20px auto; 
  }
  .msg_error{
- 	color: #e65656; 
+ 	color: #e65656;
  }
 .msg_save{
-	color: #126e00; 
+	color: #fff; 
 
 }
 .alert p
@@ -312,8 +312,6 @@ footer .contedor {
 {
 	padding: 10px; 
 }
-
-
 
 
 /***************************Actualiza datos*************************************/
@@ -592,7 +590,7 @@ footer .contedor {
 .alert
  {
  	width: 100%; 
- 	background: #0202f9;
+ 	background:  #126e00;
  	border-radius: 6px; 
  	margin: 20px auto; 
  }
@@ -600,7 +598,7 @@ footer .contedor {
  	color: #e65656; 
  }
 .msg_save{
-	color: #126e00; 
+	color: #fff; 
 
 }
 .alert p
