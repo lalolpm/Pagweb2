@@ -59,23 +59,16 @@
 						 	<textarea name="dir_cli" id="dir_cli" disabled required>  </textarea>
 						 </div>
 					</div>
-				</form>
-			</div>	
-		</center>	
-	</div>
 
-   <div class="datos_doctor">
-  	 	<div class="action_doctor">
-   			<h4> Datos Doctor</h4>
-		</div>
-
-		<form name="form_doctor" id="form_doctor" class="datos_doctor" style="padding-top: 5px">
-			<div class="agrupar-doctor">
-				<div class="elementosLinea">
+	
+   					<h4> Datos Doctor</h4>
+		
+					<div class="agrupar-doctor">
+					<div class="elementosLinea">
 				 	<label> Codigo Doctor </label>
 					<input type="text" name="cod_doc" id="cod_doc">
-				</div>
-				<div class="elementosLinea">
+					</div>
+					<div class="elementosLinea">
 					<label> Nombre Doctor </label>
 					<input type="text" name="nom_usu" id="nom_usu">
 				 </div>
@@ -84,20 +77,10 @@
 				 	<input type="text" name="tel_usu" id="tel_usu">
 				 </div>
 
-			</div> 
-		</form>
+				</div> 
 
 
-   </div>
-
-   <div class="datos_consulta">
-	   	<div class="action_consulta">
-	   		<h4> Datos Consulta</h4>
-	   	</div>
-
-   		<form name="form_consulta" id="form_consulta" class="datos_consulta">
-   		
-	   		<div class="elementosLinea1">
+			<div class="elementosLinea1">
 	   			<label> Motivo Consulta </label>
 	   			<textarea name="txt_motcon" id="txt_motcon"></textarea>
 	   		</div>
@@ -114,18 +97,8 @@
 	   			<textarea  name="txt_est" id="txt_est"></textarea>
 	   		</div>
 
-   		
-  	 		</form>
 
 
-
-  	 </div>
-
-	<div class="datos_4pendeja">
-		<div class="action_4pendeja"></div>
-
-		<form name="form_4pendeja" id="form_4pendeja" class="datos_4pendeja1">
-		
 		<table class="tbl_4pendeja">	
 		<thead>
 			  		<tr>
@@ -145,13 +118,21 @@
 			  		</tr>
 		</thead>	
 		</table>	
-	</form>
-
-
+<input type="submit" value="Crear Historial" class="btn_save">
+				</form>
+			</div>	
+		</center>	
 	</div>
+	
+ 		
 
 
-	<input type="submit" value="Crear Historial" class="btn_save">
+   </div>
+
+   
+
+
+	
 </form>	
 </div>	
 </section>
