@@ -59,6 +59,28 @@ float: auto;
 .action_4pendeja{
 	margin-bottom: 5px; 
 }
+/**********************mian*******************************/
+.main{
+	width:  550px; 
+	margin: auto;
+}
+
+
+.form_main form{
+	 
+	margin: auto;
+	padding: 20px 50px; 
+	border: 1px solid #0202f9; 
+
+}
+
+
+
+
+
+
+
+
 
 
 /************************************/

@@ -21,6 +21,8 @@
 		<center>
 			
 
+<div class="main">
+	<form name="form_main" id="form_main">
 
 			<div class="recuadroBorde">
 				<form name="form_cliente" id="form_cliente" style="padding-top: 5px">
@@ -146,8 +148,12 @@
 	</form>
 
 
-</div>
-	
+	</div>
+
+
+	<input type="submit" value="Crear Historial" class="btn_save">
+</form>	
+</div>	
 </section>
 
 
