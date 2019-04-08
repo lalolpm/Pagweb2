@@ -74,7 +74,24 @@ float: auto;
 
 }
 
+.alert
+ {
+ 	width: 100%; 
+ 	background: #126e00;
+ 	border-radius: 6px; 
+ 	margin: 20px auto; 
+ }
+ .msg_error{
+ 	color: #e65656; 
+ }
+.msg_save{
+	color: #fff; 
 
+}
+.alert p
+{
+	padding: 10px; 
+}
 
 
 
@@ -155,10 +172,11 @@ float: auto;
 	border: 0;
 	border-bottom: 1px solid black;
 	font-size: 12pt;
+	text-align: center;
 
 }
 .elementosLinea label{
-display: inline-block;
+display: inline;
   width: 60px;
 
 }
@@ -196,7 +214,7 @@ display: inline-block;
 
 }
 .elementosLinea1 label{
-display: inline-block;
+display: inline;
   width: 60px;
 
 }

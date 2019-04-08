@@ -52,7 +52,8 @@ $alert= "";
 			<td><?php echo $row['direccion'];?></td>
 			<td><?php echo $row['descripcion'];?></td>
 			<td>
-				<b><a class="editar" href="actualizar_cliente.php?codigo_datos=<?php echo $row['codigo_datos']?>">Editar</a></b>
+				<b><a class="editar" href="actualizar_cliente.php?codigo_datos=<?php echo $row['codigo_datos']?>">Editar | </a></b>
+				<b><a class="editar" href="historialclinico.php?codigo_datos=<?php echo $row['codigo_datos']?>">Consulta</a></b>
 			</td>
 
 		</tr> 

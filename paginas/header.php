@@ -23,10 +23,7 @@
 					<li> <a href="Usuario.php">  Registro Usuarios </a></li>
 					<li>  <a href="articulos.php"> Registro de Articulos</a> </li>
 					<li>  <a href="suplidores.php"> Registro  Suplidor </a> </li>
-					<li>  <a href="lista_usuarios.php"> Lista usuarios</a> </li>
-					<li><a href="lista_clientes.php">Lista clientes</a></li>
-					<li><a href="lista_articulos.php">Lista articulos</a></li>
-					<li><a href="lista_suplidores.php">Lista suplidores</a></li>
+					
 
 
 				</ul>
@@ -40,10 +37,12 @@
 				</ul>
 			</li>
 
-			<li><a href="#"> Reportes <span class="icon-down-open"></span></a>
+			<li><a href="#"> Consultas <span class="icon-down-open"></span></a>
 				<ul>
-					<li> <a href="">  Clientes </a></li>
-					<li> <a href="">  Seguros </a></li>
+					<li> <a href="lista_usuarios.php"> Lista usuarios</a> </li>
+					<li><a href="lista_clientes.php">Lista clientes</a></li>
+					<li><a href="lista_articulos.php">Lista articulos</a></li>
+					<li><a href="lista_suplidores.php">Lista suplidores</a></li>
 				</ul>
 
 			</li>
