@@ -13,15 +13,41 @@
 			{
 				$cod = $_POST['cliente']; 
 				$query = ejecutar_query("select * from  vista_cliente
-				 where codigo_cliente= '$cod'  ",$conexion); 
+				 where codigo_cliente LIKE '$cod'  ",$conexion); 
 
 
 				mssql_close($conexion); 
-				$result = mssql_fetch_array($query); 
+				$result = mssql_num_rows($query); 
 
 				$data = ''; 
 				if ($result > 0) {
-					$data = mssql_fetch_assoc($query);
+					$data = mssql_fetch_array($query);
+
+				}
+				else {
+					$data =0; 
+				}
+			}
+			echo json_encode($data); 
+		}
+
+		//buscar cliente
+		if($_POST['action'] == 'searchProducto')
+
+		{	
+		if(!empty($_POST ['producto']))
+			{
+				$cod = $_POST['producto']; 
+				$query = ejecutar_query("select * from productos
+				 where codigo_producto LIKE '$cod'  ",$conexion); 
+
+
+				mssql_close($conexion); 
+				$result = mssql_num_rows($query); 
+
+				$data = ''; 
+				if ($result > 0) {
+					$data = mssql_fetch_array($query);
 
 				}
 				else {
@@ -32,5 +58,6 @@
 		}
 	exit;
 }
+
 
   ?>

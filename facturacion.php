@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -58,7 +59,7 @@
 			 	<div class="datos1">
 			 		<div class="wd50"> 
 			 			<label> Vendedor</label>
-			 			<p> <?php  echo$_SESSION['Nombre']; ?> </p>
+			 			<p> <?php  echo $_SESSION['usuario']; ?> </p>
 			 		</div>
 			 		<div class="wd50">
 			 			<label> Acciones </label>
@@ -152,6 +153,7 @@
 <?php include "paginas/footer.php"; ?>
 
 <script src ="js/menu.js"></script>
+<script src ="js/funcion.js"></script>
 		
 </body>
 </html>
