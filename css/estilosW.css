@@ -60,6 +60,129 @@ float: auto;
 	margin-bottom: 5px; 
 }
 
+
+/************************************/
+.datos_4pendeja{
+	width: 100%;
+	max-width: 900px;
+	margin: auto;
+	margin-bottom: 20px;
+}
+.datos_4pendeja1{
+
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.action_4pendeja
+{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+}
+.tbl_4pendeja{
+	max-width: 900px;
+	margin: auto;
+}
+
+.datos_4pendeja form{
+	background: #ccc; 
+	margin: auto;
+	padding: 20px 10px; 
+	border: 1px solid #0202f9;
+}
+
+
+/******************doctor******************/
+
+
+
+
+.datos_doctor{
+	width:  550px; 
+	margin: auto;
+}
+
+
+.datos_doctor form{
+	 
+	margin: auto;
+	padding: 20px 50px; 
+	border: 1px solid #0202f9; 
+
+}
+
+
+.elementosLinea input,
+.elementosLinea textarea  {
+	height: 40px;
+	width: 80%;
+	margin-bottom: 5px;
+	border: 0;
+	border-bottom: 1px solid black;
+	font-size: 12pt;
+
+}
+.elementosLinea label{
+display: inline-block;
+  width: 60px;
+
+}
+
+
+
+
+
+
+/*************datos consulta*********************/
+
+.datos_consulta{
+	width:  550px; 
+	margin: auto;
+}
+
+
+.datos_consulta form{
+	 
+	margin: auto;
+	padding: 20px 50px; 
+	border: 1px solid #0202f9; 
+
+}
+
+
+.elementosLinea1 input,
+.elementosLinea1 textarea  {
+	height: 40px;
+	width: 80%;
+	margin-bottom: 5px;
+	border: 0;
+	border-bottom: 1px solid black;
+	font-size: 12pt;
+
+}
+.elementosLinea1 label{
+display: inline-block;
+  width: 60px;
+
+}
+
+
+
+
+
 /*============ Ventas ============*/
 .datos_cliente, .datos_venta, .title_page{
 	width: 100%;
@@ -149,3 +272,4 @@ float: auto;
 	margin: 0 3px;
 	color: #FFF;
 }
+

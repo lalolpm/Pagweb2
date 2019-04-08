@@ -64,20 +64,20 @@
 
    <div class="datos_doctor">
   	 	<div class="action_doctor">
-   			<h5> Datos Doctor</h5>
+   			<h4> Datos Doctor</h4>
 		</div>
 
-		<form name="form_doctor" id="form_doctor" class="datos_doctor">
+		<form name="form_doctor" id="form_doctor" class="datos_doctor" style="padding-top: 5px">
 			<div class="agrupar-doctor">
-				<div class="wd30">
+				<div class="elementosLinea">
 				 	<label> Codigo Doctor </label>
 					<input type="text" name="cod_doc" id="cod_doc">
 				</div>
-				<div class="wd30">
+				<div class="elementosLinea">
 					<label> Nombre Doctor </label>
 					<input type="text" name="nom_usu" id="nom_usu">
 				 </div>
-				 <div class="wd30">
+				 <div class="elementosLinea">
 				 	<label> Telefono</label>
 				 	<input type="text" name="tel_usu" id="tel_usu">
 				 </div>
@@ -90,24 +90,24 @@
 
    <div class="datos_consulta">
 	   	<div class="action_consulta">
-	   		<h6> Datos Consulta</h6>
+	   		<h4> Datos Consulta</h4>
 	   	</div>
 
    		<form name="form_consulta" id="form_consulta" class="datos_consulta">
    		
-	   		<div class="dd30">
+	   		<div class="elementosLinea1">
 	   			<label> Motivo Consulta </label>
 	   			<textarea name="txt_motcon" id="txt_motcon"></textarea>
 	   		</div>
-	   		<div class="dd40">
+	   		<div class="elementosLinea1">
 	   			<label> Historial de enfermedades </label> 
 	   			<textarea name="txt_hist" id="txt_hist"></textarea>
 	   		</div>
-	   		<div class="dd50">
+	   		<div class="elementosLinea1">
 	   			<label> Antecedentes </label>
 	   			<textarea name="txt_ant" id="txt_ant"></textarea>
 	   		</div>
-	   		<div class="dd60">
+	   		<div class="elementosLinea1">
 	   			<label> Estado General </label>
 	   			<textarea  name="txt_est" id="txt_est"></textarea>
 	   		</div>
@@ -119,32 +119,35 @@
 
   	 </div>
 
-<div class="datos_4pendeja">
-	<div class="action_4pendeja"></div>
+	<div class="datos_4pendeja">
+		<div class="action_4pendeja"></div>
 
-	<form name="form_4pendeja" id="form_4pendeja" class="datos_4pendeja1">
-		<div class="agrupar-pendeja">
-			<div class="dd100">
-   				<label> TA: </label>
-   				<input type="text" name="txt_ta" id="txtta">
-   				</div>
-   			<div class="dd100">
-   				<label> FC: </label>
-   				<input type="text" name="txt_fc" id="txt_fc">
-   				</div>
-   			<div class="dd100"> 
-   				<label> FR: </label>
-   				<input type="text" name="txt_fr" id="txt_fr">
-   				</div>
-   			<div class="dd100"> 
-   				<label> Sat 02: </label>
-   				<input type="text" name="txt_sat" id="txt_sat">
-   	    	</div>
-		</div>
+		<form name="form_4pendeja" id="form_4pendeja" class="datos_4pendeja1">
+		
+		<table class="tbl_4pendeja">	
+		<thead>
+			  		<tr>
+			  			<th width="100px"> TA: </th>
+			  			<th  > FC:</th>
+			  			<th  > FR: </th>
+			  			<th width="100px"> SAT 02: </th>		  			
+			  		</tr>
+
+			  		<tr>
+			  			<td><input type="text" name="txt_ta" id="txt_ta"> </td>
+			  			<td id="txt_fc"><input type="text" name="txt_fc" id="txt_fc" ></td>
+
+			  			<td id="txt_fr"><input type="text" name="txt_fr" id="txt_fr"></td>
+
+			  			<td><input type="text" name="txt_sat02" id="txt_sat02" ></td>
+			  		</tr>
+		</thead>	
+		</table>	
 	</form>
+
+
 </div>
 	
-
 </section>
 
 
