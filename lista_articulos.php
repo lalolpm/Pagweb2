@@ -31,7 +31,7 @@ $alert= "";
 			<th>Producto</th>
 			<th>Precio venta</th>
 			<th>Cantidad existente</th>
-			<th>Suplidor</th>
+			<!--<th>Suplidor</th>-->
 			<th>Fecha vencimiento</th>
 			<th>Lote</th>
 			<th>Edicion</th>
@@ -41,6 +41,8 @@ $alert= "";
 		<?php 
 		$sql = "select * from productos";
 		$sql = ejecutar_query($sql,$conexion);
+
+		
 		
 
 		while($row = mssql_fetch_array($sql)) { ?>
@@ -50,11 +52,11 @@ $alert= "";
 			<td><?php echo $row['producto'];?></td>
 			<td><?php echo $row['precio_venta'];?></td>
 			<td><?php echo $row['cantidad_existente'];?></td>
-			<td><?php echo $row['nombre'];?></td>
+
 			<td><?php echo $row['fecha_vencimiento'];?></td>
 			<td><?php echo $row['lote'];?></td>
 			<td>
-				<b><a class="editar" href="actualizar_datos.php?codigo_datos=<?php echo $row['codigo_datos']?>">Editar</a></b>
+				<b><a class="editar" href="actualizar_articulos.php?codigo_producto=<?php echo $row['codigo_producto']?>">Editar</a></b>
 			</td>
 
 		</tr> 
