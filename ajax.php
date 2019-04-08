@@ -12,7 +12,8 @@
 		if(!empty($_POST ['cliente']))
 			{
 				$cod = $_POST['cliente']; 
-				$query = ejecutar_query("select * from  vista_cliente where codigo_cliente= '$cod'  ",$conexion); 
+				$query = ejecutar_query("select * from  vista_cliente
+				 where codigo_cliente= '$cod'  ",$conexion); 
 
 
 				mssql_close($conexion); 
