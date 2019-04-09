@@ -18,6 +18,7 @@ if(!empty($_POST))
 {
 	$codigo_cliente = $_POST['codigo_cliente'];
 	$codigo_usuario = $_POST['codigo_usuario'];
+	$motivo_consulta = $_POST['motivo_consulta'];
 	$historial_enfermedades = $_POST['historial_enfermedades'];
 	$antecedentes = $_POST['antecedentes'];
 	$estado = $_POST['estado'];
@@ -26,7 +27,7 @@ if(!empty($_POST))
 	$fr = $_POST['fr'];
 	$sat02 = $_POST['sat02'];
 
-	$sql = "exec sphistorial_clinico '','$codigo_usuario','$codigo_cliente','$historial_enfermedades','$antecedentes','$estado','ta','fc','fr','$sat02'";
+	$sql = "exec sphistorial_clinico '','$codigo_usuario','$codigo_cliente','$motivo_consulta','$historial_enfermedades','$antecedentes','$estado','$ta','$fc','$fr','$sat02'";
 
 	$resultado = ejecutar_query($sql,$conexion);
 

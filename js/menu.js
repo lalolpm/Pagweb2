@@ -29,7 +29,7 @@ $(document).ready(function(){
 					$('#tel_cli').val(data.telefono); 
 					$('#sexo').val(data.sexo); 
 					$('#ced_cli').val(data.DNI); 
-					$('#ars_cli').val(data.codigo_seguro); 
+					$('#ars_cli').val(data.descripcion); 
 
 				
 

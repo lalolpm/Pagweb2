@@ -32,8 +32,7 @@
 				<ul>
 					<li> <a href="historialclinico.php"> Historial  Clinico </a></li>
 					<li> <a href="facturacion.php"> Facturación </a></li>
-					<li> <a href=""> sub item 3 </a></li>
-					<li> <a href=""> sub item 3  </a></li>
+					
 				</ul>
 			</li>
 
@@ -43,6 +42,7 @@
 					<li><a href="lista_clientes.php">Lista clientes</a></li>
 					<li><a href="lista_articulos.php">Lista articulos</a></li>
 					<li><a href="lista_suplidores.php">Lista suplidores</a></li>
+					<li><a href="lista_historial.php">Lista historiales</a></li>
 				</ul>
 
 			</li>
